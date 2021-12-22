@@ -704,3 +704,8 @@ header {
   display: flex;
   align-items: center;
 }
+
+/*Костиль*/
+.footer .join {
+  margin-top: 12px;
+}
