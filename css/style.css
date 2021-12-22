@@ -515,7 +515,7 @@ header {
   width: 10px;
   height: 16px;
 
-  margin-right: 0px;
+  margin-right: 10px;
 }
 
 .auth-nav .link:hover .icon {
