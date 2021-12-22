@@ -518,7 +518,8 @@ header {
   margin-right: 10px;
 }
 
-.auth-nav .link:hover .icon {
+.auth-nav .link:hover .icon,
+.auth-nav .link:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -577,7 +578,8 @@ header {
   fill: var(--primary-icon-color);
 }
 
-.social .social-item:hover {
+.social .social-item:hover,
+.social .social-item:focus {
   background-color: var(--accent-color);
 
   border-radius: 50%;
@@ -585,7 +587,8 @@ header {
   cursor: pointer;
 }
 
-.social .social-item:hover .icon {
+.social .social-item:hover .icon,
+.social .social-item:focus .icon {
   fill: var(--primary-white-color);
 }
 
@@ -636,11 +639,13 @@ header {
   fill: var(--primary-icon-color);
 }
 
-.clients-logo .item:hover {
+.clients-logo .item:hover,
+.clients-logo .item:focus {
   border-color: var(--accent-color);
 }
 
-.clients-logo .item:hover .logo {
+.clients-logo .item:hover .logo,
+.clients-logo .item:focus .logo {
   fill: var(--accent-color);
 }
 
@@ -678,7 +683,8 @@ header {
   background-color: var(--secondary-icon-color);
 }
 
-.join .item:hover {
+.join .item:hover,
+.join .item:focus {
   background-color: var(--accent-color);
 }
 
