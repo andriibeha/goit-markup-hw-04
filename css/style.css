@@ -14,6 +14,7 @@
   --first-bg-color: #2f303a;
   --footer-address-color: rgba(255, 255, 255, 0.6);
   --hero-gradient: rgba(47, 48, 58, 0.4);
+  --primary-icon-color: #afb1b8;
 }
 
 /*Шрифти для текстів та кольори*/
@@ -498,6 +499,9 @@ header {
 }
 
 /*Оформлення іконок SVG*/
+.auth-nav .icon {
+  fill: var(--primary-text-color);
+}
 .auth-nav .icon-email {
   width: 16px;
   height: 12px;
@@ -510,4 +514,130 @@ header {
   height: 16px;
 
   margin-right: 0px;
+}
+
+.auth-nav .link:hover .icon {
+  fill: var(--accent-color);
+}
+
+/*Description Label*/
+.des-label {
+  width: 270px;
+  height: 120px;
+
+  background-color: var(--secondary-bg-color);
+
+  margin-bottom: 30px;
+}
+
+.des-label .icon {
+  width: 70px;
+  height: 70px;
+  position: relative;
+
+  top: 25px;
+  left: 100px;
+}
+
+.team-list .text {
+  margin-bottom: 16px;
+}
+
+/*Social Icon*/
+.social {
+  display: flex;
+
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.social .social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social .social-item {
+  margin-right: 10px;
+}
+
+.social .social-item:last-child {
+  margin-right: 0px;
+}
+
+.social .icon {
+  width: 20px;
+  height: 20px;
+
+  position: relative;
+  top: 12px;
+  left: 12px;
+
+  fill: var(--primary-icon-color);
+}
+
+.social .social-item:hover {
+  background-color: var(--accent-color);
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.social .social-item:hover .icon {
+  fill: var(--primary-white-color);
+}
+
+/*Clients*/
+.clients .title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.clients {
+  padding-top: 91px;
+  padding-bottom: 94px;
+}
+
+.clients-logo {
+  display: flex;
+}
+
+.clients-logo .logo {
+  width: 106px;
+  height: 60px;
+
+  position: relative;
+  top: 16px;
+  left: 32px;
+}
+
+.clients-logo .item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+}
+
+.clients-logo .item {
+  margin-right: 30px;
+}
+
+.clients-logo .item:last-child {
+  margin-right: 0px;
+}
+
+.logo {
+  fill: var(--primary-icon-color);
+}
+
+.clients-logo .item:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-logo .item:hover .logo {
+  fill: var(--accent-color);
 }
