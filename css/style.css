@@ -148,8 +148,6 @@ p {
 
 .site-nav {
   display: flex;
-
-  margin-right: 305px;
 }
 
 .site-nav .item {
@@ -164,6 +162,8 @@ p {
   display: flex;
 
   align-items: center;
+
+  margin-left: auto;
 }
 
 .auth-nav .item {
@@ -374,6 +374,8 @@ button {
   padding-bottom: 30px;
 }
 
+.team-list
+
 /*Footer*/
 /*От тут напевно неправильно Можливо це мало бути зверху загально для всіх але поки так*/
 .footer .link.adres,
@@ -554,16 +556,20 @@ header {
   padding-left: 32px;
 }
 
-.social .social-item {
+.social a {
   width: 44px;
   height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social .social-item {
+.social a {
   margin-right: 10px;
 }
 
-.social .social-item:last-child {
+.social a:last-child {
   margin-right: 0px;
 }
 
@@ -571,15 +577,11 @@ header {
   width: 20px;
   height: 20px;
 
-  position: relative;
-  top: 12px;
-  left: 12px;
-
   fill: var(--primary-icon-color);
 }
 
-.social .social-item:hover,
-.social .social-item:focus {
+.social a:hover,
+.social a:focus {
   background-color: var(--accent-color);
 
   border-radius: 50%;
@@ -587,8 +589,8 @@ header {
   cursor: pointer;
 }
 
-.social .social-item:hover .icon,
-.social .social-item:focus .icon {
+.social a:hover .icon,
+.social a:focus .icon {
   fill: var(--primary-white-color);
 }
 
@@ -613,40 +615,39 @@ header {
 .clients-logo .logo {
   width: 106px;
   height: 60px;
-
-  position: relative;
-  top: 16px;
-  left: 32px;
-}
-
-.clients-logo .item {
-  width: 170px;
-  height: 92px;
-
-  border: 1px solid var(--primary-icon-color);
-  border-radius: 4px;
-}
-
-.clients-logo .item {
-  margin-right: 30px;
-}
-
-.clients-logo .item:last-child {
-  margin-right: 0px;
 }
 
 .logo {
   fill: var(--primary-icon-color);
 }
 
-.clients-logo .item:hover,
-.clients-logo .item:focus {
+.clients-logo .link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-logo .link:hover .logo,
+.clients-logo .link:focus .logo {
+  fill: var(--accent-color);
+}
+
+.clients-logo .link:hover,
+.clients-logo .link:focus {
   border-color: var(--accent-color);
 }
 
-.clients-logo .item:hover .logo,
-.clients-logo .item:focus .logo {
-  fill: var(--accent-color);
+.clients-logo a {
+  margin-right: 30px;
+}
+
+.clients-logo a:last-child {
+  margin-right: 0px;
 }
 
 /*Join*/
@@ -668,37 +669,39 @@ header {
   width: 20px;
   height: 20px;
 
-  position: relative;
-  top: 12px;
-  left: 12px;
-
   fill: var(--primary-white-color);
 }
 
-.join .item {
+.join a {
   width: 44px;
   height: 44px;
-
   border-radius: 50%;
+
   background-color: var(--secondary-icon-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.join .item:hover,
-.join .item:focus {
+.join a:hover,
+.join a:focus {
   background-color: var(--accent-color);
 }
 
-.join .item {
+.join a {
   margin-right: 10px;
 }
 
-.join .item:last-child {
+.join a:last-child {
   margin-right: 0px;
 }
 
 /*Якось рівняю всю цю діч у футері*/
 .footer .container {
   display: flex;
+
+  align-items: baseline;
 }
 
 .footer .logo-address {
@@ -709,9 +712,4 @@ header {
 .auth-nav .link {
   display: flex;
   align-items: center;
-}
-
-/*Костиль*/
-.footer .join {
-  margin-top: 12px;
 }
