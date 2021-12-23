@@ -378,16 +378,15 @@ button {
 
 /*Footer*/
 /*От тут напевно неправильно Можливо це мало бути зверху загально для всіх але поки так*/
-.footer .link.adres,
-.footer .link.tel {
+.footer .link,
+.footer .link {
   color: var(--footer-address-color);
 }
 
 /*Можливо так треба можливо ні поки лишу так як є*/
-.footer .link.adres:hover,
-.footer .link.adres:focus,
-.footer .link.tel:hover,
-.footer .link.tel:focus {
+
+.footer .link:hover,
+.footer .link:focus {
   color: var(--accent-color);
 }
 
